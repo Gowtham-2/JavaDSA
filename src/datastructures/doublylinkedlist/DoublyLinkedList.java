@@ -79,7 +79,6 @@ public class DoublyLinkedList {
         else if(length==1){
             head=null;
             tail=null;
-
         }
         else{
             tail=tail.prev;
