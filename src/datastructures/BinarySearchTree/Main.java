@@ -16,6 +16,8 @@ public class Main {
         myBST.rInsert(-2);
         myBST.rInsert(-3);
 
+
+
        /* System.out.println("Root:"+myBST.getRoot().value);
         System.out.println("Root->left:"+myBST.getRoot().left.value);
         System.out.println("Root->right:"+myBST.getRoot().right.value);
