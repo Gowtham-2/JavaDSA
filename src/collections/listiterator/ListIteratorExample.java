@@ -2,7 +2,7 @@ package collections.listiterator;
 
 import java.util.*;
 
-public class ListIteratorExample {
+public class ListIteratorExample{
     public static void main(String[] args) {
         List<Integer> arraylist=new ArrayList<>();
         arraylist.add(1);
