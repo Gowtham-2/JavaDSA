@@ -36,5 +36,8 @@ public class QueueExample {
 
         //peek element
         System.out.println("\nPeeked Element:"+deque.peek());
+
+        //toString
+        System.out.println("\ntoString method:"+deque.toString());
     }
 }

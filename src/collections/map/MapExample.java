@@ -65,5 +65,8 @@ public class MapExample{
 
         System.out.println("\ngetOrDefault method:"+map.getOrDefault("six",20));
 
+        //toString method
+
+        System.out.println("\ntoString method:"+map.toString());
     }
 }

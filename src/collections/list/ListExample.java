@@ -117,5 +117,8 @@ public class ListExample {
         System.out.println(linkedList.equals(arrayList));
         System.out.println(linkedList.equals(vector));
         System.out.println(vector.equals(linkedList));
+
+        //toString
+        System.out.println("\ntoString method:"+linkedList.toString());
     }
 }

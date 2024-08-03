@@ -71,5 +71,12 @@ public class HashTable {
 
         System.out.println("\ngetOrDefault method:"+hashTable.getOrDefault("six",22));
 
+        //isEmpty
+
+        System.out.println("\nisEmpty() method:"+hashTable.isEmpty());
+
+        //toString
+
+        System.out.println("toString method:"+hashTable.toString());
     }
 }
