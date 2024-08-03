@@ -6,6 +6,7 @@ public class MapExample{
     public static void main(String[] args) {
         Map<String,Integer> map=new HashMap<>();
         Map<String,Integer> linkedHashMap=new LinkedHashMap<>();
+        
         //adding elements
 
         map.put("one",1);
@@ -13,50 +14,56 @@ public class MapExample{
         map.put("three",3);
         map.put("four",4);
         map.put("five",5);
+        linkedHashMap.put("six",6);
+        linkedHashMap.put("seven",7);
+        map.putAll(linkedHashMap);
         System.out.println("Printing map:"+map);
         //size
 
-        System.out.println("Size of map:"+map.size());
+        System.out.println("\nSize of map:"+map.size());
 
         //checking a key is present
 
-        System.out.println(map.get("two")+" key is present:"+map.containsKey("two"));
+        System.out.println("\n"+map.get("two")+" key is present:"+map.containsKey("two"));
+
+        //checking a value is present
+
+        System.out.println("\nContainsValue method:"+map.containsValue(2));
 
         //entrySet
 
-        System.out.println("Entry Set Method:");
+        System.out.println("\nEntry Set Method:\n");
         for (Map.Entry<String,Integer> entry:map.entrySet()){
-            System.out.print(entry.getKey()+" ");
-            System.out.println(entry.getValue());
+            System.out.println(entry.getKey()+" "+entry.getValue()+" "+entry.getClass());
         }
 
         //keySet
 
-        System.out.println("Ket Set in Map:"+map.keySet());
+        System.out.println("\nKet Set in Map:"+map.keySet());
 
         //values
 
-        System.out.println("Values of the map:"+map.values());
+        System.out.println("\nValues of the map:"+map.values());
 
         //keyset iterator
 
-        System.out.println("KeySet Iterator:");
+        System.out.println("\nKeySet Iterator:");
         Set<String> keys=map.keySet();
         Iterator<String> itr=keys.iterator();
         while(itr.hasNext()){
             System.out.print(itr.next()+" ");
         }
-        System.out.print("\nContains value method:");
-        System.out.print(map.containsValue(2)+"\n");
+        System.out.println("\n\nContains value method:");
+        System.out.print("2 is present:"+map.containsValue(2)+"\n");
 
         //replace
 
         map.replace("one",2);
-        System.out.println(map);
+        System.out.println("\nPrinting Map:"+map);
 
         //getOrDefault
 
-        System.out.println("getOrDefault method:"+map.getOrDefault("six",20));
+        System.out.println("\ngetOrDefault method:"+map.getOrDefault("six",20));
 
     }
 }
